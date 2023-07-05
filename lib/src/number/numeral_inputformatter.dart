@@ -102,7 +102,7 @@ class IDKitNumeralTextInputFormatter extends TextInputFormatter
       TextEditingValue oldValue, TextEditingValue newValue) {
     // Determine whether the input is legal.
     final RegExp regExp =
-        decimalPoint ? RegExp(r'^(\d+\.?\d*)?$') : RegExp(r'^(\d*)?$');
+        decimalPoint ? RegExp(r'^(\d+\,?\d*)?$') : RegExp(r'^(\d*)?$');
     String newText = newValue.text;
     late int selectionIndex = newValue.selection.end;
     final int oldSelectionIndex = oldValue.selection.end;
