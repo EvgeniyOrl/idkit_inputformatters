@@ -69,7 +69,7 @@ mixin NumeralInputFormatterMixin {
   ) {
     late String result = curValue;
     late bool res = false;
-    final List<String> resList = curValue.split('.');
+    final List<String> resList = curValue.split(',');
     if (resList.length >= 2) {
       if (resList.last.length > digit) {
         result = oldValue;
